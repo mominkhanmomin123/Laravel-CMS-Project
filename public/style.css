@@ -1,0 +1,39 @@
+.form-container{
+    width: 600px;
+    padding: 15px 10px;
+    box-shadow: 2px 2px 8px 2px;
+    margin: 20px 0;
+    margin-left: 10px;
+}
+.outline:focus {
+    /* outline: none !important; */
+    border-color:#ced4da  !important;
+    box-shadow: none !important;/* Bootstrap ki shadow bhi remove karni hogi*/
+}
+.bi-eye-fill{
+    margin-left: -35px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+ .description-td {
+    max-width: 100px;        /* apne hisaab se width fix karo */
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+    vertical-align: middle;
+}
+
+.comment-box{
+    margin-top: 4px;
+    width: fit-content;
+    padding-top:5px ;
+    padding-bottom:5px ;
+    padding-right: 15px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+
+
