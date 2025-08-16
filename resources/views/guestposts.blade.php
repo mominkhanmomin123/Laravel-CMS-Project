@@ -10,23 +10,22 @@
 </head>
 <body>
     <nav class="d-flex justify-content-around bg-dark text-white">
-        <h1>Content management system</h1>
+        <h1>StoryStack</h1>
         <div class="d-flex justify-content-end gap-3 align-items-center">
             <a href="{{route('login')}}" class="btn btn-primary">Login</a>
             <a href="{{route('register')}}" class="btn btn-primary">Signup</a>
         </div>
     </nav>
     
-    <h1>guest posts</h1>
-    <div class="row">
-        <div class="col-8">
-            
-            @if (session('message')){{--iska matalb agar hamne koi message naam se key banayi hai jo kisi dusre page se arahi hai. yahan hamne controller ki file me store method me redirect krte waqt ek key banayi thi jis me user add hone message tha to ham usko yahan show karenge--}}
-                <div class="alert alert-success">{{session('message')}}</div>{{--ab user add hone par alert me hamara message show hojayega. or page refresh karne par message hat jayega--}}
-            @endif
-        </div>
-    </div>
-     <div class="container">
+    <div class="container">
+         <div class="row">
+             <div class="col-8">
+                 
+                 @if (session('message')){{--iska matalb agar hamne koi message naam se key banayi hai jo kisi dusre page se arahi hai. yahan hamne controller ki file me store method me redirect krte waqt ek key banayi thi jis me user add hone message tha to ham usko yahan show karenge--}}
+                     <div class="alert alert-success">{{session('message')}}</div>{{--ab user add hone par alert me hamara message show hojayega. or page refresh karne par message hat jayega--}}
+                 @endif
+             </div>
+         </div>
 
 
 
@@ -64,7 +63,7 @@
         </div>
         @endforeach
 
-        <div class="mt-4">
+        <div class="mt-4 mb-5">
             {{$posts->links()}}{{--ye method pagination k liye use hota hai--}}
         </div>
 
@@ -86,7 +85,16 @@
         });
        
     </script>
-    
+<!-- Footer -->
+ <footer class="text-center text-white py-2 bg-dark">
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-dark">
+      © 2025 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">StoryStack.com</a>
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->    
 
     <script src="{{asset('bootstrap-5.0.2-dist/js/bootstrap.min.js')}}"></script>
 </body>
